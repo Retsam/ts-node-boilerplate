@@ -1,0 +1,15 @@
+node_modules
+dist
+build
+.DS_Store
+.idea
+*.log
+.eslintcache
+.npmrc
+
+# Emacs Stuffs
+.tern-port
+*.org
+
+# Generated on install
+public/mockServiceWorker.js
