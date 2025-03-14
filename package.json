@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint . --ext js,jsx,ts,tsx --cache --max-warnings 0",
-    "install-pnpm": "npm i -g pnpm@8.6.5",
+    "install-pnpm": "npm i -g pnpm@9.15.0",
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",
     "start": "ts-node-dev src/index",
