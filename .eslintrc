@@ -1,9 +1,10 @@
 {
     "parserOptions": {
         "sourceType": "module",
-        "project": "./tsconfig.eslint.json"
+        "project": "./tsconfig.eslint.json",
+        "ecmaVersion": 2024,
     },
     "extends": [
         /* base config here */
-    ]
+    ],
 }
