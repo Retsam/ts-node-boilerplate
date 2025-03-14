@@ -11,9 +11,12 @@ importers:
       '@eslint/js':
         specifier: ^9.22.0
         version: 9.22.0
-      '@tsconfig/node16-strictest':
-        specifier: ^1.0.4
-        version: 1.0.4
+      '@tsconfig/node18':
+        specifier: ^18.2.4
+        version: 18.2.4
+      '@types/node':
+        specifier: 18.19.80
+        version: 18.19.80
       eslint:
         specifier: ^9.22.0
         version: 9.22.0
@@ -22,7 +25,7 @@ importers:
         version: 3.5.3
       ts-node-dev:
         specifier: ^2.0.0
-        version: 2.0.0(@types/node@20.10.4)(typescript@5.8.2)
+        version: 2.0.0(@types/node@18.19.80)(typescript@5.8.2)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -129,12 +132,11 @@ packages:
   '@tsconfig/node14@1.0.3':
     resolution: {integrity: sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==}
 
-  '@tsconfig/node16-strictest@1.0.4':
-    resolution: {integrity: sha512-kp6/DuAoKzHVv5U+p0uOesYbjrEvrYVNdQMl163a+yXXUv9twabvkCGEn3pmVxKXB45JU5MPGolDDWnONZL5ZQ==}
-    deprecated: TypeScript 5.0 supports combining TSConfigs using array syntax in extends
-
   '@tsconfig/node16@1.0.4':
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
+
+  '@tsconfig/node18@18.2.4':
+    resolution: {integrity: sha512-5xxU8vVs9/FNcvm3gE07fPbn9tl6tqGGWA9tSlwsUEkBxtRnTsNmwrV8gasZ9F/EobaSv9+nu8AxUKccw77JpQ==}
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -142,8 +144,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@20.10.4':
-    resolution: {integrity: sha512-D08YG6rr8X90YB56tSIuBaddy/UXAA9RKJoFvrsnogAum/0pmjkgi4+2nx96A330FmioegBWmEYQ+syqCFaveg==}
+  '@types/node@18.19.80':
+    resolution: {integrity: sha512-kEWeMwMeIvxYkeg1gTc01awpwLbfMRZXdIhwRcakd/KlK53jmRC26LqcbIt7fnAQTu5GzlnWmzA3H6+l1u6xxQ==}
 
   '@types/strip-bom@3.0.0':
     resolution: {integrity: sha512-xevGOReSYGM7g/kUBZzPqCrR/KYAo+F0yiPc85WFTJa0MSLtyFTVTU6cJu/aV4mid7IffDIWqo69THF2o4JiEQ==}
@@ -823,15 +825,15 @@ snapshots:
 
   '@tsconfig/node14@1.0.3': {}
 
-  '@tsconfig/node16-strictest@1.0.4': {}
-
   '@tsconfig/node16@1.0.4': {}
+
+  '@tsconfig/node18@18.2.4': {}
 
   '@types/estree@1.0.6': {}
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@20.10.4':
+  '@types/node@18.19.80':
     dependencies:
       undici-types: 5.26.5
 
@@ -1343,7 +1345,7 @@ snapshots:
     dependencies:
       typescript: 5.8.2
 
-  ts-node-dev@2.0.0(@types/node@20.10.4)(typescript@5.8.2):
+  ts-node-dev@2.0.0(@types/node@18.19.80)(typescript@5.8.2):
     dependencies:
       chokidar: 3.5.3
       dynamic-dedupe: 0.3.0
@@ -1353,7 +1355,7 @@ snapshots:
       rimraf: 2.7.1
       source-map-support: 0.5.21
       tree-kill: 1.2.2
-      ts-node: 10.9.2(@types/node@20.10.4)(typescript@5.8.2)
+      ts-node: 10.9.2(@types/node@18.19.80)(typescript@5.8.2)
       tsconfig: 7.0.0
       typescript: 5.8.2
     transitivePeerDependencies:
@@ -1361,14 +1363,14 @@ snapshots:
       - '@swc/wasm'
       - '@types/node'
 
-  ts-node@10.9.2(@types/node@20.10.4)(typescript@5.8.2):
+  ts-node@10.9.2(@types/node@18.19.80)(typescript@5.8.2):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.9
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.10.4
+      '@types/node': 18.19.80
       acorn: 8.11.2
       acorn-walk: 8.3.1
       arg: 4.1.3
